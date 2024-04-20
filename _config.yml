@@ -58,8 +58,8 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "LinhDC"
-  avatar : "/assets/images/bio-photo.jpg"
+  name   : "Linh DC"
+  avatar : "/assets/images/linhdc.jpg"
   bio    : "Hihi."
   links:
     - label: "Website"
