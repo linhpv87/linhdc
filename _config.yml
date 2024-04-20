@@ -116,4 +116,4 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-logo: "/assets/images/logo-ldc.jpeg"
+logo: "/assets/images/logo-ldcvn.png"
