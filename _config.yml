@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "Linh Phan"
   avatar : "/assets/images/linhdc.jpg"
-  bio    : "Nothing is impossible"
+  bio    : "Nothing is impossible."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -89,6 +89,9 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/"
+    - label: "Youtube"
+      icon: "fab fa-fw fa-youtube"
+      url: https://www.youtube.com/@linhdcvn
 
 defaults:
   # _posts
