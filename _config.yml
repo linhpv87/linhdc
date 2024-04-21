@@ -58,9 +58,9 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Linh DC"
+  name   : "Linh Phan"
   avatar : "/assets/images/linhdc.jpg"
-  bio    : "Hihi."
+  bio    : "Nothing is impossible"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
