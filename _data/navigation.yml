@@ -1,5 +1,5 @@
 main:
-  - title: "Proxmox VE Guide""
+  - title: "Proxmox VE Guide"
     url: /proxmoxve/
   - title: "Monitoring"
     url: /monitoring/
