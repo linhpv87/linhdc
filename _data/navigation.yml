@@ -1,6 +1,14 @@
 main:
-  - title: "Posts"
-    url: /posts/
+  - title: "Proxmox VE Guide""
+    url: /proxmoxve/
+  - title: "Monitoring"
+    url: /monitoring/
+  - title: "Networking"
+    url: /networking/
+  - title: "Linux"
+    url: /linux/
+  - title: "Tips & Tricks"
+    url: /tipandtrick/
   - title: "Categories"
     url: /categories/
   - title: "Tags"
