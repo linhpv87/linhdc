@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "Linh Phan"
   avatar : "/assets/images/linhdc.jpg"
-  bio    : "Nothing is impossible."
+  bio    : "Nothing is impossible.""
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
