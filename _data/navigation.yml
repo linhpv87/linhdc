@@ -1,6 +1,8 @@
 main:
   - title: "Proxmox VE Guide"
     url: /proxmoxve/
+  - title: "Data Center"
+    url: /datacenter/
   - title: "Monitoring"
     url: /monitoring/
   - title: "Networking"
@@ -8,8 +10,15 @@ main:
   - title: "Linux"
     url: /linux/
   - title: "Raid"
-    url: /raid/
+    url: /docs/what-is-raid/
   - title: "Tips & Tricks"
     url: /tipandtrick/
   - title: "Tags"
     url: /tags/
+
+# documentation links
+docs:
+  - title: Getting Started
+    children:
+      - title: "What is Raid ?"
+        url: /docs/what-is-raid/
