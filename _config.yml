@@ -93,6 +93,12 @@ footer:
       icon: "fab fa-fw fa-youtube"
       url: https://www.youtube.com/@linhdcvn
 
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
+
 defaults:
   # _posts
   - scope:
