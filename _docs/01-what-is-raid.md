@@ -1,5 +1,5 @@
 ---
-title: "What is Raid""
+title: "What is Raid"
 permalink: /docs/what-is-raid/
 toc: true
 tags:
