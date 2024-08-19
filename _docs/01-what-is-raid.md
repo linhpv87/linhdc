@@ -1,12 +1,10 @@
 ---
-title: "Post: Modified Date"
-last_modified_at: 2016-03-09T16:20:02-05:00
-categories:
-  - Blog
+title: "What is Raid""
+permalink: /docs/what-is-raid/
+excerpt: "Raid and beyond."
+toc: true
 tags:
-  - Post Formats
-  - readability
-  - standard
+  - Raid
 ---
 
 **1. RAID LÀ GÌ ?**
