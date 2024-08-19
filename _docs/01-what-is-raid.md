@@ -1,7 +1,6 @@
 ---
 title: "What is Raid""
 permalink: /docs/what-is-raid/
-excerpt: "Raid and beyond."
 toc: true
 tags:
   - Raid
