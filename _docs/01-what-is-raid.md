@@ -167,7 +167,7 @@ Nhược điểm :
 
 Hot Spares (Ổ đĩa dự phòng nóng) là ổ đĩa được chỉ định thay thế ổ đĩa bị lỗi một cách tự động và minh bạch trong mảng RAID có khả năng chịu lỗi. Điều này giúp giảm thiểu lượng thời gian khi mảng vẫn ở chế độ degraded  sau khi ổ đĩa bị lỗi bằng cách tự động bắt đầu quá trình xây dựng lại để khôi phục dữ liệu từ ổ đĩa bị lỗi trên ổ dự phòng nóng. Ổ đĩa dự phòng nóng có thể là Global hoặc Dedicated. Ổ đĩa Global hot spare có thể được sử dụng để thay thế ổ đĩa bị lỗi trong bất kỳ nhóm ổ đĩa chịu lỗi nào miễn là dung lượng của nó bằng hoặc lớn hơn dung lượng của ổ đĩa bị lỗi được sử dụng bởi mảng RAID. Ổ đĩa  dedicated hot spare chỉ có thể thay thế ổ đĩa bị lỗi trong nhóm ổ đĩa được chỉ định.
 
-## ** Triển khai Raid:**
+## **Triển khai Raid:**
 
 Raid có thể tạo bằng 2 cách khác nhau:
 
@@ -206,7 +206,7 @@ Bộ điều khiển xử lý tất cả các chức năng RAID trong bộ xử 
 - Đắt hơn Software RAID.
 - Khi bộ điều khiển RAID gặp sự cố, nó nên được thay thế bằng bộ điều khiển tương tự để tránh sự cố. Nếu không có bộ điều khiển mới ngay lập tức, chức năng hệ thống có thể bị chậm trễ.
 
-## ** Lựa chọn cấp độ Raid phù hợp:**
+## **Lựa chọn cấp độ Raid phù hợp:**
 
 Các yếu tố cần xem xét khi chọn cấp độ RAID phù hợp bao gồm: 
 
@@ -234,7 +234,4 @@ Bản sao lưu đó sẽ có ích nếu tất cả các ổ đĩa bị lỗi đ�
 Đó là một biện pháp bảo vệ khi hệ thống lưu trữ bị đánh cắp. Sao lưu có thể được giữ bên ngoài ở một vị trí khác. Điều này có thể hữu ích nếu thiên tai hoặc hỏa hoạn phá hủy nơi làm việc của bạn. 
 
 Lý do quan trọng nhất để sao lưu nhiều thế hệ dữ liệu là lỗi người dùng. Nếu ai đó vô tình xóa một số dữ liệu quan trọng và điều này không được chú ý trong vài giờ, vài ngày hoặc vài tuần, một bộ sao lưu tốt sẽ đảm bảo bạn vẫn có thể truy xuất các tệp đó.
-
-
-
 
