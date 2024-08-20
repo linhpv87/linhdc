@@ -6,7 +6,7 @@ tags:
   - Raid
 ---
 
-**1. RAID LÀ GÌ ?**
+## ** RAID LÀ GÌ ?**
 
  RAID là chữ viết tắt của Redundant Array of Independent Disks. RAID là công nghệ ảo hóa lưu trữ dữ liệu kết hợp nhiều thành phần ổ đĩa vật lý thành một ổ đĩa logic duy nhất nhằm mục đích dự phòng dữ liệu, cải thiện hiệu suất hoặc cả hai.
 
@@ -19,7 +19,7 @@ Mỗi cấp độ RAID lại phục vụ một mục tiêu khác nhau dựa trê
 - Hiệu suất dữ liệu/ Data Performance – đảm bảo truy cập dữ liệu nhanh chóng cho cả hoạt động đọc và ghi.
 - Dung lượng dữ liệu/ Data Capacity – đảm bảo khả năng lưu trữ lượng dữ liệu lớn.
 
-**2. Các kỹ thuật lưu trữ Raid**
+## **Các kỹ thuật lưu trữ Raid**
 
 Có 3 phương pháp lưu trữ dữ liệu chính trong mảng là:
 
@@ -31,9 +31,9 @@ Có 3 phương pháp lưu trữ dữ liệu chính trong mảng là:
 
 Tất cả các các loại raid hiện có đều dựa trên striping, mirroring, parity hoặc kết hợp các kỹ thuật lưu trữ này.
 
-**3. CÁC CẤP ĐỘ RAID THƯỜNG SỬ DỤNG**
+## **CÁC CẤP ĐỘ RAID THƯỜNG SỬ DỤNG**
 
-**3.1 RAID 0 (striping):**
+### **1. RAID 0 (striping):**
 
 Cấp RAID này kết hợp từ hai ổ đĩa cứng trở lên theo cách các dữ liệu từ người dùng được cắt ra thành nhiều khối có thể quản lý được. Các khối này được phân tán lên khắp các ổ đĩa khác nhau trong mảng đĩa RAID 0. Bằng cách thực hiện này, kết hợp hai hay nhiều ổ cứng, hiệu năng đọc/ghi, đặc biệt là khả năng truy cập tuần tự, có thể được cải thiện. Tuy nhiên, không có dữ liệu dự phòng nào (parity) được lưu trên mảng RAID 0 cả, nghĩa là nếu một đĩa cứng hư hỏng, tất cả dữ liệu sẽ bị mất. Thiếu dữ liệu dự phòng cũng được thể hiện bởi con số 0, chỉ ra rằng chẳng có dữ liệu dự phòng nào cả. RAID 0 vì vậy luôn không được dùng trong những máy chủ có quan tâm nhiều đến vấn đề an toàn.
 
@@ -47,7 +47,7 @@ Cấp RAID này kết hợp từ hai ổ đĩa cứng trở lên theo cách các
 
 **Ứng dụng:** Raid 0 sử dụng tốt nhất cho việc lưu trữ những dữ liệu không quan trọng nhưng yêu cầu đọc và ghi tốc độ cao. Trong thực tế raid 0 thường được sử dụng làm cache cho live streaming video  và chỉnh sửa video.
 
-**3.2. RAID 1 (mirroring):**
+### **2. RAID 1 (mirroring):**
 
 Raid 1 hay disk mirroring là quá trình sao chép dữ liệu vào nhiều hơn 1 ổ đĩa. Cả 2 đĩa hoạt động cùng lúc trong cùng 1 thời gian, do đó có thể đọc dữ liệu từ trên cả 2 ổ đĩa và điều này làm tăng tốc độ đọc. Tuy nhiên thao tác ghi dữ liệu sẽ chậm vì mỗi thao tác ghi sẽ thực hiện 2 lần.
 
@@ -67,7 +67,7 @@ Với Raid 1 dữ liệu sẽ được ghi trên cả 2 ổ cứng , do đó d�
 
 **Ứng dụng:** Thường được dùng cho các máy chủ chạy các ứng dụng trong giao dịch như bảng lương, tài chính, kế toán; các máy chủ chạy dịch vụ email; các máy chủ chạy website vừa và nhỏ không yêu cầu quá cao về tốc độ đọc, ghi; và dùng để chạy hệ điều hành.
 
-**3.3. RAID 5:**
+### **3. RAID 5:**
 
 Raid 5 sử dụng cả kỹ thuật striping và parity. Cung cấp cải thiện tốc độ đọc xấp xỉ như raid 0. 
 
@@ -87,7 +87,7 @@ RAID 5 cho độ an toàn cao: Khi một ổ đĩa hư hỏng, tất cả mọi 
 
 **Ứng dụng:** Cấu hình RAID 5 mang lại hiệu quả lưu trữ cao và nó có thể được sử dụng để xây dựng các ứng dụng lưu trữ chung chẳng hạn như hệ thống lưu trữ tệp, tin tức và máy chủ ứng dụng cũng như máy chủ email không chứa thông tin nhạy cảm; Các máy chủ xử lý giao dịch trực tuyến (OLTP), máy chủ web, các ứng dụng yêu cầu hoạt động đọc và ghi ở mức độ cao, chẳng hạn như video streaming, web content, video-on-demand. Nếu tổ chức của bạn yêu cầu hoạt động đọc và ghi hiệu suất cao nhưng có ngân sách eo hẹp, cấu hình RAID 5 có thể là lựa chọn lý tưởng.
 
-**3.4. RAID 6:**
+### **4. RAID 6:**
 
 Raid 6 là phần mở rộng của raid 5 và sử dụng khối parity bổ sung.
 
@@ -106,7 +106,7 @@ Dung lượng: Dung lượng của một mảng RAID 6 với N ổ đĩa sẽ b�
 
 **Ứng dụng:** Raid 6 là sự lựa chọn tốt nhất cho các ứng dụng quan trọng và nhạy cảm.
 
-**3.5. RAID 10:**
+### **5. RAID 10:**
 
 RAID 10 là sự kết hợp của RAID 0 và RAID 1 trong đó dữ liệu được phân chia theo nhiều nhóm ổ đĩa RAID 1, như thể hiện trong hình dưới đây. RAID 10 còn được gọi là span mirroring.
 
@@ -123,7 +123,7 @@ Dung lượng:  Dung lượng của một mảng RAID 10 bằng một nửa tổ
 
 **Ứng dụng:** Lý tưởng cho các máy chủ cơ sở dữ liệu và bất kỳ môi trường nào có nhiều dữ liệu nhỏ ngẫu nhiên được ghi.
 
-**3.6. Raid 50:**
+### **6. Raid 50:**
 
 RAID 50 là sự kết hợp của RAID 0 và RAID 5, trong đó dữ liệu được phân chia theo nhiều nhóm ổ đĩa RAID 5, như thể hiện trong hình dưới đây. RAID 50 còn được gọi là spanned striping với phân phối parity.
 
@@ -143,7 +143,7 @@ Dung lượng : Dung lượng Raid 50 = dung lượng của S * (N-1) disk, vớ
 
 **Ứng dụng:** Raid 50 sử dụng tốt nhất cho các ứng dụng cần độ tin cậy cao và xử lý các yêu cầu tốc độ cao và truyền dữ liệu cao với chi phí ổ đĩa thấp hơn so với mảng raid 10. Chẳng hạn như sử dụng làm storage cho streaming video.
 
-**3.7. Raid 60:**
+### **7. Raid 60:**
 
 RAID 60 là sự kết hợp của RAID 0 và RAID 6 trong đó dữ liệu được phân chia theo nhiều nhóm ổ đĩa RAID 6, như thể hiện trong hình dưới đây. RAID 60 còn được gọi là span striping với parity được phân tán trên 2 ổ đĩa.
 
@@ -163,11 +163,11 @@ Nhược điểm :
 
 **Ứng dụng:** Raid 60 tương tự như raid 50 nhưng cung cấp nhiều dự phòng hơn, nên nó đặc biệt hữu ích cho các giải pháp lưu trữ dữ liệu lớn và tính sẵn sàng cao, các máy chủ không được backup (như máy chủ lưu trữ video xử lý số lượng lớn Camera).
 
-**3.8. Hot Spares:**
+### **8. Hot Spares:**
 
 Hot Spares (Ổ đĩa dự phòng nóng) là ổ đĩa được chỉ định thay thế ổ đĩa bị lỗi một cách tự động và minh bạch trong mảng RAID có khả năng chịu lỗi. Điều này giúp giảm thiểu lượng thời gian khi mảng vẫn ở chế độ degraded  sau khi ổ đĩa bị lỗi bằng cách tự động bắt đầu quá trình xây dựng lại để khôi phục dữ liệu từ ổ đĩa bị lỗi trên ổ dự phòng nóng. Ổ đĩa dự phòng nóng có thể là Global hoặc Dedicated. Ổ đĩa Global hot spare có thể được sử dụng để thay thế ổ đĩa bị lỗi trong bất kỳ nhóm ổ đĩa chịu lỗi nào miễn là dung lượng của nó bằng hoặc lớn hơn dung lượng của ổ đĩa bị lỗi được sử dụng bởi mảng RAID. Ổ đĩa  dedicated hot spare chỉ có thể thay thế ổ đĩa bị lỗi trong nhóm ổ đĩa được chỉ định.
 
-**4. Triển khai Raid:**
+## ** Triển khai Raid:**
 
 Raid có thể tạo bằng 2 cách khác nhau:
 
@@ -175,7 +175,7 @@ Raid có thể tạo bằng 2 cách khác nhau:
 
 **Hardware raid:** sử dụng phần cứng đặc biệt.
 
-**4.1. Software Raid:**
+### **1. Software Raid:**
 
 Software Raid là 1 trong những giải pháp Raid rẻ nhất.
 Trong Software RAID, việc triển khai RAID là một ứng dụng chạy trên máy chủ. Loại RAID này sử dụng các ổ đĩa được gắn vào hệ thống máy tính thông qua giao diện I/O tích hợp hoặc bộ điều hợp bus máy chủ không cần bộ xử lý (HBA). RAID sẽ hoạt động ngay sau khi HĐH đã tải phần mềm trình điều khiển RAID.
@@ -188,7 +188,7 @@ RAID phần mềm chạy hoàn toàn trên CPU của hệ thống máy chủ.
 
 **Nhược điểm:**  Hiệu suất RAID thấp hơn vì CPU cũng cung cấp năng lượng cho HĐH và ứng dụng.
 
-**4.2. Hardware Raid:**
+### **2. Hardware Raid:**
 
 RAID phần cứng được tạo bằng phần cứng riêng biệt. Về cơ bản có hai lựa chọn:
 - Sử dụng RAID-on-Chip (ROC) tích hợp trên các bo mạch chủ.
@@ -206,7 +206,7 @@ Bộ điều khiển xử lý tất cả các chức năng RAID trong bộ xử 
 - Đắt hơn Software RAID.
 - Khi bộ điều khiển RAID gặp sự cố, nó nên được thay thế bằng bộ điều khiển tương tự để tránh sự cố. Nếu không có bộ điều khiển mới ngay lập tức, chức năng hệ thống có thể bị chậm trễ.
 
-**5. Lựa chọn cấp độ Raid phù hợp:**
+## ** Lựa chọn cấp độ Raid phù hợp:**
 
 Các yếu tố cần xem xét khi chọn cấp độ RAID phù hợp bao gồm: 
 
