@@ -6,7 +6,7 @@ tags:
   - Raid
 ---
 
-## ** RAID LÀ GÌ ?**
+## **RAID LÀ GÌ ?**
 
  RAID là chữ viết tắt của Redundant Array of Independent Disks. RAID là công nghệ ảo hóa lưu trữ dữ liệu kết hợp nhiều thành phần ổ đĩa vật lý thành một ổ đĩa logic duy nhất nhằm mục đích dự phòng dữ liệu, cải thiện hiệu suất hoặc cả hai.
 
