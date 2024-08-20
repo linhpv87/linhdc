@@ -23,11 +23,14 @@ Mỗi cấp độ RAID lại phục vụ một mục tiêu khác nhau dựa trê
 
 Có 3 phương pháp lưu trữ dữ liệu chính trong mảng là:
 
-### **Striping:** Tách luồng dữ liệu thành các khối có kích thước nhất định (được gọi là “block size”), sau đó ghi từng khối này thông qua raid. Cách lưu trữ dữ liệu này làm tăng hiệu suất đọc/ghi dữ liệu.
+### **Striping** 
+Striping tách luồng dữ liệu thành các khối có kích thước nhất định (được gọi là “block size”), sau đó ghi từng khối này thông qua raid. Cách lưu trữ dữ liệu này làm tăng hiệu suất đọc/ghi dữ liệu.
 
-### **Mirroring:** là một kỹ thuật lưu trữ trong đó các bản sao dữ liệu giống hệt nhau được lưu trữ đồng thời trên các thành viên RAID. Kiểu sắp xếp dữ liệu này ảnh hưởng đến khả năng chịu lỗi cũng như hiệu suất.
+### **Mirroring** 
+Mirroring là một kỹ thuật lưu trữ trong đó các bản sao dữ liệu giống hệt nhau được lưu trữ đồng thời trên các thành viên RAID. Kiểu sắp xếp dữ liệu này ảnh hưởng đến khả năng chịu lỗi cũng như hiệu suất.
 
-### **Parity:** là một kiểm tra dự phòng đảm bảo bảo vệ hoàn toàn dữ liệu mà không cần duy trì một bộ dữ liệu trùng lặp đầy đủ. Nó là  kỹ thuật lưu trữ sử dụng phương pháp striping và checksum. Checksum (dịch nôm na là kiểm tra tổng) thường được sử dụng để xác minh tính toàn vẹn dữ liệu. Trong kỹ thuật này, một hàm parity nhất định được tính cho khối dữ liệu. Nếu một ổ đĩa bị lỗi, khối bị thiếu sẽ được tính toán lại từ checksum, cung cấp khả năng chịu lỗi RAID.
+### **Parity** 
+Parity là một kiểm tra dự phòng đảm bảo bảo vệ hoàn toàn dữ liệu mà không cần duy trì một bộ dữ liệu trùng lặp đầy đủ. Nó là  kỹ thuật lưu trữ sử dụng phương pháp striping và checksum. Checksum (dịch nôm na là kiểm tra tổng) thường được sử dụng để xác minh tính toàn vẹn dữ liệu. Trong kỹ thuật này, một hàm parity nhất định được tính cho khối dữ liệu. Nếu một ổ đĩa bị lỗi, khối bị thiếu sẽ được tính toán lại từ checksum, cung cấp khả năng chịu lỗi RAID.
 
 Tất cả các các loại raid hiện có đều dựa trên striping, mirroring, parity hoặc kết hợp các kỹ thuật lưu trữ này.
 
