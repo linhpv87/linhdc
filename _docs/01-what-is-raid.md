@@ -9,7 +9,7 @@ tags:
 ## **RAID LÀ GÌ ?**
 
  RAID là chữ viết tắt của Redundant Array of Independent Disks. RAID là công nghệ ảo hóa lưu trữ dữ liệu kết hợp nhiều thành phần ổ đĩa vật lý thành một ổ đĩa logic duy nhất nhằm mục đích dự phòng dữ liệu, cải thiện hiệu suất hoặc cả hai.
- !["linhdcvn.id.vn"] (https://linhdcvn.id.vn/assets/images/raid.png)
+ !["linhdcvn.id.vn"](https://linhdcvn.id.vn/assets/images/raid.png)
  Mục tiêu chính của RAID là nâng cao tính khả dụng và an toàn của dữ liệu. RAID ngăn ngừa tình trạng không hoạt động xảy ra khi một ổ đĩa cứng hư hỏng, tuy nhiên nó không thể phục hồi được dữ liệu đã được người dùng xóa hoặc bị phá hủy khi gặp sự cố lớn như trộm cắp dữ liệu hay hỏa hoạn. Vì vậy, thường xuyên Sao lưu dự phòng cho dữ liệu của bạn là việc bắt buộc phải làm để giữ cho hệ thống của bạn được an toàn khỏi các sự cố này sau khi đã lắp đặt một hệ thống RAID.
 
 Mỗi cấp độ RAID lại phục vụ một mục tiêu khác nhau dựa trên những nhu cầu cụ thể để giải quyết các yêu cầu nhất định như:
@@ -40,7 +40,7 @@ Tất cả các các loại raid hiện có đều dựa trên striping, mirrori
 
 Cấp RAID này kết hợp từ hai ổ đĩa cứng trở lên theo cách các dữ liệu từ người dùng được cắt ra thành nhiều khối có thể quản lý được. Các khối này được phân tán lên khắp các ổ đĩa khác nhau trong mảng đĩa RAID 0. Bằng cách thực hiện này, kết hợp hai hay nhiều ổ cứng, hiệu năng đọc/ghi, đặc biệt là khả năng truy cập tuần tự, có thể được cải thiện. Tuy nhiên, không có dữ liệu dự phòng nào (parity) được lưu trên mảng RAID 0 cả, nghĩa là nếu một đĩa cứng hư hỏng, tất cả dữ liệu sẽ bị mất. Thiếu dữ liệu dự phòng cũng được thể hiện bởi con số 0, chỉ ra rằng chẳng có dữ liệu dự phòng nào cả. RAID 0 vì vậy luôn không được dùng trong những máy chủ có quan tâm nhiều đến vấn đề an toàn.
 
- !["linhdcvn.id.vn"] (https://linhdcvn.id.vn/assets/images/raid0.gif)
+ !["linhdcvn.id.vn"](https://linhdcvn.id.vn/assets/images/raid0.gif)
 
 **Ưu điểm:** Tốc độ đọc ghi dữ liệu nhanh nhất, nếu càng nhiều ổ đĩa kết hợp tốc độ đọc ghi càng cao.
 
@@ -55,6 +55,9 @@ Cấp RAID này kết hợp từ hai ổ đĩa cứng trở lên theo cách các
 ### **2. RAID 1 (mirroring)**
 
 Raid 1 hay disk mirroring là quá trình sao chép dữ liệu vào nhiều hơn 1 ổ đĩa. Cả 2 đĩa hoạt động cùng lúc trong cùng 1 thời gian, do đó có thể đọc dữ liệu từ trên cả 2 ổ đĩa và điều này làm tăng tốc độ đọc. Tuy nhiên thao tác ghi dữ liệu sẽ chậm vì mỗi thao tác ghi sẽ thực hiện 2 lần.
+
+ !["linhdcvn.id.vn"](https://linhdcvn.id.vn/assets/images/raid1.gif)
+
 
 Với Raid 1 dữ liệu sẽ được ghi trên cả 2 ổ cứng , do đó dữ liệu của bạn sẽ khả dụng ngay cả khi 1 ổ đĩa bị hỏng và máy chủ của bạn vẫn hoạt động bình thường. Ổ đĩa bị lỗi chỉ có thể thay thế bằng cách thủ công.
 
@@ -78,6 +81,8 @@ Raid 5 sử dụng cả kỹ thuật striping và parity. Cung cấp cải thi�
 
 RAID 5 sử dụng block level trong đó dữ liệu và các parity được phân tán lên tất cả mọi ổ đĩa. Mảng đĩa RAID 5 cho năng suất cân đối hơn. Ngay cả với những khối dữ liệu nhỏ, rất thường gặp trong những môi trường đa nhiệm và đa người dùng, thời gian đáp ứng rất tốt.
 
+ !["linhdcvn.id.vn"](https://linhdcvn.id.vn/assets/images/raid5.gif)
+
 RAID 5 cho độ an toàn cao: Khi một ổ đĩa hư hỏng, tất cả mọi dữ liệu cũng vẫn có đầy đủ để sử dụng. Dữ liệu bị mất được tìm lại bằng cách dùng các parity để xác định phần dữ liệu còn lưu lại.
 
 **Ưu điểm:** Khả năng hoạt động liên tục cao, một đĩa có thể hư, nhưng Ổ Đĩa Logic vẫn có dữ liệu để sử dụng, tận dụng được dung lượng đĩa để lưu trữ (mảng n đĩa, n-1 đĩa được dùng để lưu trữ).
@@ -98,6 +103,8 @@ Raid 6 là phần mở rộng của raid 5 và sử dụng khối parity bổ su
 
 Tương tự như RAID 5, Raid 6  sử dụng block level striping với 2 khối parity được phân phối trên tất cả các đĩa thành viên. RAID 6 tạo tới 2 parity cho 1 dữ liệu vì thế RAID 6 tăng khả năng chịu lỗi ( có thể hư tới 2 ổ đĩa ).
 
+ !["linhdcvn.id.vn"](https://linhdcvn.id.vn/assets/images/raid6.gif)
+
 RAID 6 cung cấp khả năng chịu lỗi ở mức cao nhất và mang lại hiệu suất đọc tuyệt vời tương tự như RAID 0, tuy nhiên, hiệu suất ghi có thể bị giảm (và chậm hơn một chút so với RAID 5) do phải tính toán cập nhật hai khối parity cho mỗi thao tác ghi. Ngoài ra, hiệu suất đọc cũng có thể bị ảnh hưởng raid ở chế độ degraded mode, tức là trong trường hợp ổ đĩa bị lỗi.
 
 **Ưu điểm:** Dự phòng dữ liệu, hiệu suất đọc cao.
@@ -115,6 +122,9 @@ Dung lượng: Dung lượng của một mảng RAID 6 với N ổ đĩa sẽ b�
 
 RAID 10 là sự kết hợp của RAID 0 và RAID 1 trong đó dữ liệu được phân chia theo nhiều nhóm ổ đĩa RAID 1, như thể hiện trong hình dưới đây. RAID 10 còn được gọi là span mirroring.
 
+ !["linhdcvn.id.vn"](https://linhdcvn.id.vn/assets/images/raid10.gif)
+
+
 RAID 10 cung cấp khả năng chịu lỗi bằng cách duy trì lỗi một ổ đĩa trong mỗi span và nó mang lại hiệu suất rất tốt với quá trình xử lý I/O đồng thời trên tất cả các ổ đĩa.
 
 **Ưu điểm:** Hiệu suất đọc ghi cao và bảo vệ dữ liệu (cho phép lỗi 1 ổ trên mỗi span) với thời gian xây dựng lại Raid (rebuild) nhanh chóng.
@@ -131,6 +141,8 @@ Dung lượng:  Dung lượng của một mảng RAID 10 bằng một nửa tổ
 ### **6. Raid 50**
 
 RAID 50 là sự kết hợp của RAID 0 và RAID 5, trong đó dữ liệu được phân chia theo nhiều nhóm ổ đĩa RAID 5, như thể hiện trong hình dưới đây. RAID 50 còn được gọi là spanned striping với phân phối parity.
+
+ !["linhdcvn.id.vn"](https://linhdcvn.id.vn/assets/images/raid50.png)
 
 RAID 50 cung cấp khả năng chịu lỗi bằng cách duy trì lỗi một ổ đĩa trong mỗi span (Span ở đây được hiểu là tầng thấp hơn của mảng, được kết hợp để tạo nên tầng tiếp theo khi thảo luận về các cấp độ raid lồng nhau; như hình trên thì ta có 1 raid 0 từ  2 span raid 5) và nó mang lại hiệu suất đọc tuyệt vời. Nó cũng cải thiện hiệu suất ghi so với RAID 5 do tính toán parity riêng biệt trong mỗi span. 
 
@@ -152,6 +164,8 @@ Dung lượng : Dung lượng Raid 50 = dung lượng của S * (N-1) disk, vớ
 
 RAID 60 là sự kết hợp của RAID 0 và RAID 6 trong đó dữ liệu được phân chia theo nhiều nhóm ổ đĩa RAID 6, như thể hiện trong hình dưới đây. RAID 60 còn được gọi là span striping với parity được phân tán trên 2 ổ đĩa.
 
+ !["linhdcvn.id.vn"](https://linhdcvn.id.vn/assets/images/raid60.png)
+
 RAID 60 cung cấp khả năng chịu lỗi tốt nhất bằng cách duy trì hai lỗi ổ đĩa đồng thời trong mỗi span và nó mang lại hiệu suất đọc tuyệt vời. Nó cũng cải thiện hiệu suất ghi so với RAID 6 do tính toán parity riêng biệt trong mỗi span.
 
 **Ưu điểm:**
@@ -171,6 +185,9 @@ Nhược điểm :
 ### **8. Hot Spares**
 
 Hot Spares (Ổ đĩa dự phòng nóng) là ổ đĩa được chỉ định thay thế ổ đĩa bị lỗi một cách tự động và minh bạch trong mảng RAID có khả năng chịu lỗi. Điều này giúp giảm thiểu lượng thời gian khi mảng vẫn ở chế độ degraded  sau khi ổ đĩa bị lỗi bằng cách tự động bắt đầu quá trình xây dựng lại để khôi phục dữ liệu từ ổ đĩa bị lỗi trên ổ dự phòng nóng. Ổ đĩa dự phòng nóng có thể là Global hoặc Dedicated. Ổ đĩa Global hot spare có thể được sử dụng để thay thế ổ đĩa bị lỗi trong bất kỳ nhóm ổ đĩa chịu lỗi nào miễn là dung lượng của nó bằng hoặc lớn hơn dung lượng của ổ đĩa bị lỗi được sử dụng bởi mảng RAID. Ổ đĩa  dedicated hot spare chỉ có thể thay thế ổ đĩa bị lỗi trong nhóm ổ đĩa được chỉ định.
+
+ !["linhdcvn.id.vn"](https://linhdcvn.id.vn/assets/images/hotspare.png)
+
 
 ## **Triển khai Raid**
 
@@ -201,6 +218,8 @@ RAID phần cứng được tạo bằng phần cứng riêng biệt. Về cơ b
 
 Bộ điều khiển xử lý tất cả các chức năng RAID trong bộ xử lý và bộ nhớ phần cứng của chính nó. CPU máy chủ không phải tải khối lượng công việc lưu trữ nên nó có thể tập trung xử lý các yêu cầu phần mềm của hệ điều hành máy chủ và các ứng dụng.
 
+ !["linhdcvn.id.vn"](https://linhdcvn.id.vn/assets/images/hardware-raid.PNG)
+
 **Ưu điểm:** 
 - Hiệu suất tốt hơn Software RAID. 
 - Không sử dụng CPU của máy chủ.
@@ -222,15 +241,24 @@ Các yếu tố cần xem xét khi chọn cấp độ RAID phù hợp bao gồm:
 
 Bảng sau đây tóm tắt các cấp độ RAID và đặc điểm của chúng để hỗ trợ bạn chọn cấp độ RAID thích hợp nhất cho nhu cầu của mình hay tư vấn cho khách hàng.
 
+ !["linhdcvn.id.vn"](https://linhdcvn.id.vn/assets/images/raid-feature.png)
+
+
 Ghi chú:
-* Số lượng ổ đĩa tối đa trong một mảng RAID phụ thuộc vào bộ điều khiển và hệ thống.
-** Lên đến 8 span với 2 ổ đĩa trên mỗi span.
+(*) Số lượng ổ đĩa tối đa trong một mảng RAID phụ thuộc vào bộ điều khiển và hệ thống.
+(**) Lên đến 8 span với 2 ổ đĩa trên mỗi span.
 - Các thuật ngữ Excellent, Very good, Good, và Satisfactory là các chỉ số hiệu suất tương đối nhằm mục đích so sánh và không đại diện cho bất kỳ giá trị tuyệt đối nào. Mức độ: Excellent > Very good > Good > Satisfactory.
 - Các thuật ngữ Fast và Slow là các chỉ báo thời gian xây dựng lại tương đối nhằm mục đích so sánh và không đại diện cho bất kỳ giá trị tuyệt đối nào: Fast > Slow.
 - Degraded array performance có nghĩa là hiệu suất của mảng RAID với một hoặc nhiều ổ đĩa bị lỗi.
 Bảng sau đây tóm tắt các lợi ích và hạn chế của từng cấp độ RAID.
 
+ !["linhdcvn.id.vn"](https://linhdcvn.id.vn/assets/images/raid-uu-nhuoc.png)
+
+
 Một điều quan trọng cần lưu ý là RAID không thể thay thế cho Backup!
+
+ !["linhdcvn.id.vn"](https://linhdcvn.id.vn/assets/images/raid-not-backup.png)
+
 
 Tất cả các cấp độ RAID ngoại trừ RAID 0 đều cung cấp khả năng bảo vệ khỏi lỗi một ổ đĩa. Một hệ thống RAID 6 thậm chí còn tồn tại khi 2 đĩa chết đồng thời. Để bảo mật hoàn toàn, bạn vẫn cần sao lưu dữ liệu được lưu trữ trên hệ thống RAID. 
 
