@@ -9,7 +9,7 @@ tags:
 ## **RAID LÀ GÌ ?**
 
  RAID là chữ viết tắt của Redundant Array of Independent Disks. RAID là công nghệ ảo hóa lưu trữ dữ liệu kết hợp nhiều thành phần ổ đĩa vật lý thành một ổ đĩa logic duy nhất nhằm mục đích dự phòng dữ liệu, cải thiện hiệu suất hoặc cả hai.
-
+[!["linhdcvn.id.vn"] (https://linhdcvn.id.vn/assets/images/raid.png)] (https://linhdcvn.id.vn)
  Mục tiêu chính của RAID là nâng cao tính khả dụng và an toàn của dữ liệu. RAID ngăn ngừa tình trạng không hoạt động xảy ra khi một ổ đĩa cứng hư hỏng, tuy nhiên nó không thể phục hồi được dữ liệu đã được người dùng xóa hoặc bị phá hủy khi gặp sự cố lớn như trộm cắp dữ liệu hay hỏa hoạn. Vì vậy, thường xuyên Sao lưu dự phòng cho dữ liệu của bạn là việc bắt buộc phải làm để giữ cho hệ thống của bạn được an toàn khỏi các sự cố này sau khi đã lắp đặt một hệ thống RAID.
 
 Mỗi cấp độ RAID lại phục vụ một mục tiêu khác nhau dựa trên những nhu cầu cụ thể để giải quyết các yêu cầu nhất định như:
@@ -39,6 +39,8 @@ Tất cả các các loại raid hiện có đều dựa trên striping, mirrori
 ### **1. RAID 0 (striping)**
 
 Cấp RAID này kết hợp từ hai ổ đĩa cứng trở lên theo cách các dữ liệu từ người dùng được cắt ra thành nhiều khối có thể quản lý được. Các khối này được phân tán lên khắp các ổ đĩa khác nhau trong mảng đĩa RAID 0. Bằng cách thực hiện này, kết hợp hai hay nhiều ổ cứng, hiệu năng đọc/ghi, đặc biệt là khả năng truy cập tuần tự, có thể được cải thiện. Tuy nhiên, không có dữ liệu dự phòng nào (parity) được lưu trên mảng RAID 0 cả, nghĩa là nếu một đĩa cứng hư hỏng, tất cả dữ liệu sẽ bị mất. Thiếu dữ liệu dự phòng cũng được thể hiện bởi con số 0, chỉ ra rằng chẳng có dữ liệu dự phòng nào cả. RAID 0 vì vậy luôn không được dùng trong những máy chủ có quan tâm nhiều đến vấn đề an toàn.
+
+[!["linhdcvn.id.vn"] (https://linhdcvn.id.vn/assets/images/raid0.gif)] (https://linhdcvn.id.vn)
 
 **Ưu điểm:** Tốc độ đọc ghi dữ liệu nhanh nhất, nếu càng nhiều ổ đĩa kết hợp tốc độ đọc ghi càng cao.
 
