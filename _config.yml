@@ -15,10 +15,13 @@
 # in the templates via {{ site.myvariable }}.
 title: LinhDCVN
 email:
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+#description: >- # this means to ignore newlines until "baseurl:"
+#  Write an awesome description for your new site here. You can edit this
+#  line in _config.yml. It will appear in your document head meta (for
+#  Google search results) and in your feed.xml site description.
+description: "Welcome to linhdcvn.id.vn, your go-to resource for in-depth insights and expert knowledge on server technology and data centers. Discover the latest trends, best practices, and innovations in the world of IT infrastructure. Whether you're an industry professional or a tech enthusiast, our blog provides valuable information to help you stay ahead in the rapidly evolving tech landscape. Join us as we explore the future of server management and data center solutions."
+
+url: "https://linhdcvn.id.vn"
 twitter_username: linhit87
 github_username: username
 minimal_mistakes_skin: "air" #default
@@ -62,18 +65,18 @@ author:
   avatar : "/assets/images/linhdc.jpg"
   bio    : "Nothing is impossible."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https:/linhdcvn.id.vn/"
+#    - label: "Website"
+#      icon: "fas fa-fw fa-link"
+#      url: "https:/linhdcvn.id.vn/"
     - label: "Youtube"
       icon: "fab fa-fw fa-youtube"
       url: https://www.youtube.com/@linhdcvn
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/linhit87"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+#    - label: "GitHub"
+#      icon: "fab fa-fw fa-github"
+#      url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/"
@@ -83,12 +86,12 @@ footer:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/linhit87"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+#    - label: "GitHub"
+#      icon: "fab fa-fw fa-github"
+#      url: "https://github.com/"
+#    - label: "Instagram"
+#      icon: "fab fa-fw fa-instagram"
+#      url: "https://instagram.com/"
     - label: "Youtube"
       icon: "fab fa-fw fa-youtube"
       url: https://www.youtube.com/@linhdcvn
