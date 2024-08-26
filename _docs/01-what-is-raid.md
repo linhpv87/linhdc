@@ -150,7 +150,8 @@ RAID 50 cung cấp khả năng chịu lỗi bằng cách duy trì lỗi một �
 - Cung cấp hiệu suất đọc tuyệt vời. 
 - Tăng khả năng bảo vệ mà không phải tốn nhiều chi phí như mảng Raid 10.
 - Tăng thông lượng dữ liệu và dự phòng.
-Nhược điểm : 
+  
+**Nhược điểm:**
 - Yêu cầu nhiều ổ đĩa.
 - Đắt hơn so với raid 5.
 - Thời gian xây dựng lại Raid (Rebuild) chậm.
@@ -171,7 +172,8 @@ RAID 60 cung cấp khả năng chịu lỗi tốt nhất bằng cách duy trì h
 **Ưu điểm:**
 - Hiệu suất cao hơn so với Raid 6, đặc biệt trong quá trình ghi. 
 - Có thể duy trì 2 ổ đĩa lỗi trên mỗi mảng Raid 6 nên rất an toàn.
-Nhược điểm : 
+  
+**Nhược điểm:**
 - Yêu cầu nhiều ổ đĩa.
 - Đắt hơn so với Raid 50 1 chút do cần thêm ổ đĩa cho tính toán parity.
 - Thời gian xây dựng lại Raid (Rebuild) chậm.
